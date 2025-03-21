@@ -1,0 +1,65 @@
+{
+    "haMagic2": {
+        "class": "vdhCyborg",
+        "female": true,
+        "spellbook": ["haste"],
+
+        "texts": {
+            "name": "萨特琳",
+            "biography": "朝气蓬勃的年轻巫师，她有着奇特的魔力。很少会见到她精疲力尽。",
+            "specialty": {
+            	"name": "神秘术",
+                "description": "在神秘术上每级得到5%的额外奖励。",
+                "tooltip": "技能加成：神秘术"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/satrine/specSmall",
+            "specialtyLarge": "celestial/heroes/satrine/specLarge",
+            "large": "celestial/heroes/satrine/portraitLarge",
+            "small": "celestial/heroes/satrine/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "mysticism"
+            },
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "mysticism": {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+                    "updater": "TIMES_HERO_LEVEL",
+                    "val": 5
+                }
+            }
+        }
+    }
+}

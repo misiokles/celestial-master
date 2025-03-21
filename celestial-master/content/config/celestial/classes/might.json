@@ -1,0 +1,87 @@
+{
+    "vdhMarshal": {
+        "name": "发条元帅",
+        "faction": "celestial",
+        "affinity": "might",
+        "commander": "anTechnoid",
+
+        "primarySkills": {
+            "attack": 2,
+            "defence": 2,
+            "spellpower": 1,
+            "knowledge": 1
+        },
+        "lowLevelChance": {
+            "attack": 30,
+            "defence": 30,
+            "spellpower": 20,
+            "knowledge": 20
+        },
+        "highLevelChance": {
+            "attack": 25,
+            "defence": 25,
+            "spellpower": 25,
+            "knowledge": 25
+        },
+
+        "secondarySkills": {
+            "airMagic": 6,
+            "earthMagic": 6,
+            "fireMagic": 6,
+            "waterMagic": 6,
+            "archery": 5,
+            "offence": 5,
+            "pathfinding": 5,
+            "logistics": 7,
+            "scouting": 3,
+            "diplomacy": 1,
+            "navigation": 3,
+            "leadership": 3,
+            "wisdom": 7,
+            "mysticism": 6,
+            "luck": 4,
+            "ballistics": 5,
+            "eagleEye": 2,
+            "necromancy": 0,
+            "estates": 1,
+            "scholar": 1,
+            "tactics": 5,
+            "artillery": 8,
+            "learning": 5,
+            "armorer": 4,
+            "intelligence": 1,
+            "sorcery": 1,
+            "resistance": 5,
+            "firstAid": 1
+        },
+
+        "defaultTavern": 5,
+        "tavern": {
+            "castle": 4,
+            "rampart": 4,
+            "tower": 4,
+            "inferno": 4,
+            "necropolis": 4,
+            "dungeon": 4,
+            "stronghold": 4,
+            "fortress": 4,
+            "conflux": 4,
+            "celestial": 4
+        },
+
+        "animation": {
+            "battle": {
+                "female": "celestial/battleHeroMight",
+                "male": "celestial/battleHeroMight"
+            }
+        },
+
+        "mapObject": {
+            "templates": {
+                "default": {
+                    "animation": "celestial/mapHeroMight"
+                }
+            }
+        }
+    }
+}

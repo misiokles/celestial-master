@@ -1,0 +1,66 @@
+{
+    "haMagic3": {
+        "class": "vdhCyborg",
+        "female": false,
+        "spellbook": ["bless"],
+
+        "texts": {
+            "name": "吉克拉斯",
+            "biography": "作为一名敬业的科学家，他一直希望为社区找到便宜，清洁的能源。",
+            "specialty": {
+                "name": "+1水晶",
+                "description": "为王国每天额外提供1水晶。",
+                "tooltip": "每天+1水晶"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/ziclas/specSmall",
+            "specialtyLarge": "celestial/heroes/ziclas/specLarge",
+            "large": "celestial/heroes/ziclas/portraitLarge",
+            "small": "celestial/heroes/ziclas/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+        	{
+                "level": "basic",
+                "skill": "estates"
+            },
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "crystal": {
+                    "type": "GENERATE_RESOURCE",
+                    "subtype": "resource.crystal",
+                    "updater": {
+                        "parameters": [2],
+                        "type": "GROWS_WITH_LEVEL"
+                    }
+                }
+            }
+        }
+    }
+}

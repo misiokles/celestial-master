@@ -1,0 +1,80 @@
+{
+    "name": "Celestial",
+    "description": "Celestial town.",
+    "modType": "Town",
+    "version": "1.3.2",
+    "author": "Vũ Đắc Hoàng Ân",
+    "contact": "https://github.com/vdhan/Celestial",
+    "licenseName": "Creative Commons Attribution-NonCommercial-ShareAlike",
+    "licenseURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "changelog": {
+        "1.3.2": ["Rebalances level 4 creatures."],
+        "1.3.1": ["Update Grail and special buildings."],
+        "1.3.0": ["Rebalance heroes, creatures, commander and fix various things."],
+        "1.2.3": ["Rebalance creatures speed."],
+        "1.2.2": ["Add screenshots."],
+        "1.2.1": ["Add heroes biography."],
+        "1.2.0": ["Rebalance creatures, heroes and classes."],
+        "1.1.0": ["Fully integrate into VCMI 0.99."],
+        "1.0.0": ["Initial release."]
+    },
+	"language": "chinese",
+	"chinese": {
+		"name": "发条城",
+		"description": "新城镇：发条城。"
+	},
+	
+    "factions": [
+        "config/celestial/town/faction.json",
+        "config/celestial/town/building.json",
+        "config/celestial/town/structure.json",
+        "config/celestial/town/siege.json",
+        "config/celestial/town/spell.json",
+        "config/celestial/town/puzzle.json"
+    ],
+
+    "heroClasses": [
+        "config/celestial/classes/magic.json",
+        "config/celestial/classes/might.json"
+    ],
+
+    "heroes": [
+        "config/celestial/heroes/magic1.json",
+        "config/celestial/heroes/magic2.json",
+        "config/celestial/heroes/magic3.json",
+        "config/celestial/heroes/magic4.json",
+        "config/celestial/heroes/magic5.json",
+        "config/celestial/heroes/magic6.json",
+        "config/celestial/heroes/magic7.json",
+        "config/celestial/heroes/magic8.json",
+        "config/celestial/heroes/might1.json",
+        "config/celestial/heroes/might2.json",
+        "config/celestial/heroes/might3.json",
+        "config/celestial/heroes/might4.json",
+        "config/celestial/heroes/might5.json",
+        "config/celestial/heroes/might6.json",
+        "config/celestial/heroes/might7.json",
+        "config/celestial/heroes/might8.json"
+    ],
+
+    "creatures": [
+        "config/celestial/creatures/lv1.json",
+        "config/celestial/creatures/lv1up.json",
+        "config/celestial/creatures/lv2.json",
+        "config/celestial/creatures/lv2up.json",
+        "config/celestial/creatures/lv3.json",
+        "config/celestial/creatures/lv3up.json",
+        "config/celestial/creatures/lv4.json",
+        "config/celestial/creatures/lv4up.json",
+        "config/celestial/creatures/lv5.json",
+        "config/celestial/creatures/lv5up.json",
+        "config/celestial/creatures/lv6.json",
+        "config/celestial/creatures/lv6up.json",
+        "config/celestial/creatures/lv7.json",
+        "config/celestial/creatures/lv7up.json",
+        "config/celestial/commander/technoid.json"
+    ],
+
+    "objects": ["config/celestial/dwellings"],
+	"spells": ["config/celestial/spells/moat.json"]
+}

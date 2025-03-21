@@ -1,0 +1,65 @@
+{
+    "haMight7": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "雷特斯",
+            "biography": "他是炮兵部队元帅，后援将军，负责支援战场上的各个部队。",
+            "specialty": {
+            	"name": "防御术",
+                "description": "在防御术上每级得到5%的额外奖励。",
+                "tooltip": "技能加成：防御术"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/reltes/specSmall",
+            "specialtyLarge": "celestial/heroes/reltes/specLarge",
+            "large": "celestial/heroes/reltes/portraitLarge",
+            "small": "celestial/heroes/reltes/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "armorer"
+            },
+            {
+                "level": "basic",
+                "skill": "pathfinding"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "armorer": {
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+                    "updater": "TIMES_HERO_LEVEL",
+                    "val": 5
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "anHealer": {
+        "name": {
+            "singular": "修复魔像",
+            "plural": "修复魔像"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 3,
+        "aiValue": 463,
+        "fightValue": 446,
+        "growth": 7,
+        "horde": 4,
+
+        "attack": 9,
+        "defense": 9,
+        "damage": {
+            "max": 5,
+            "min": 5
+        },
+        "hitPoints": 30,
+        "speed": 12,
+        "doubleWide": false,
+        "hasDoubleWeek": false,
+        "cost": {
+            "gold": 250
+        },
+
+        "abilities": {
+            "robot": {
+                "type": "NON_LIVING"
+            },
+            "healer": {
+                "type": "HEALER",
+				"subtype" : "spell.cure"
+            },
+            "fly": {
+                "type": "FLYING",
+                "subtype": "movementTeleporting"
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 20,
+            "min": 12
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/maniac.def",
+            "map": "celestial/map/maniac.def",
+            "iconSmall": "celestial/iconsSmall/maniac.bmp",
+            "iconLarge": "celestial/iconsBig/maniac.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 0.6,
+                "walk": 1,
+                "idle": 4
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/S200ATTK.wav",
+            "defend": "celestial/S200DFND.wav",
+            "killed": "celestial/S200KILL.wav",
+            "move": "celestial/S200MOVE.wav",
+            "wince": "celestial/S200WNCE.wav"
+        }
+    }
+}

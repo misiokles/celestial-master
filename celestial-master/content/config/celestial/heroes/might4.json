@@ -1,0 +1,52 @@
+{
+    "haMight4": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "萨瑞提",
+            "biography": "凭借精准的射击能力，他是投射部队的元帅，右翼将军。",
+            "specialty": {
+                "name": "戴立克",
+                "description": "达到4级以后提高戴立克或冲锋戴立克的攻击力与防御力。",
+                "tooltip": "生物强化：戴立克"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/sarity/specSmall",
+            "specialtyLarge": "celestial/heroes/sarity/specLarge",
+            "large": "celestial/heroes/sarity/portraitLarge",
+            "small": "celestial/heroes/sarity/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anDalek",
+                "min": 1,
+                "max": 3
+            },
+            {
+                "creature": "anDalek",
+                "min": 1,
+                "max": 3
+            },
+            {
+                "creature": "anDalek",
+                "min": 1,
+                "max": 3
+            }
+        ],
+
+        "skills": [
+        	{
+                "level": "advanced",
+                "skill": "archery"
+            }
+        ],
+
+        "specialty": {
+            "creature": "anDalek"
+        }
+    }
+}

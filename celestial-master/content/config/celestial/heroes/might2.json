@@ -1,0 +1,56 @@
+{
+    "haMight2": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "普林提尔",
+            "biography": "勇敢的领袖，先锋部队元帅。",
+            "specialty": {
+            	"name": "火焰射手",
+                "description": "达到2级以后提高火焰射手或酸液射手的攻击力与防御力。",
+                "tooltip": "生物强化：火焰射手"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/printeer/specSmall",
+            "specialtyLarge": "celestial/heroes/printeer/specLarge",
+            "large": "celestial/heroes/printeer/portraitLarge",
+            "small": "celestial/heroes/printeer/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "scouting"
+            },
+            {
+                "level": "basic",
+                "skill": "resistance"
+            }
+        ],
+
+        "specialty": {
+            "creature": "anFlametrooper"
+        }
+    }
+}

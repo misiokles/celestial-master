@@ -1,0 +1,127 @@
+{
+    "anGuardsman": {
+        "name": {
+            "singular": "卫兵",
+            "plural": "卫兵"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 1,
+        "upgrades": ["anVeteranGuardsman"],
+        "aiValue": 132,
+        "fightValue": 142,
+        "growth": 14,
+        "horde": 7,
+
+        "attack": 4,
+        "defense": 4,
+        "damage": {
+            "max": 2,
+            "min": 2
+        },
+        "hitPoints": 10,
+        "speed": 4,
+        "doubleWide": false,
+        "hasDoubleWeek": true,
+        "cost": {
+            "gold": 50
+        },
+
+        "abilities": {
+            "additionalRetaliation": {
+                "type": "ADDITIONAL_RETALIATION",
+                "val": 1
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin", //min
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax", //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            },
+            {
+                "bonus": {
+                    "type": "ADDITIONAL_RETALIATION"
+                },
+                "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 9]
+            },
+            {
+                "bonus": {
+                    "type": "UNLIMITED_RETALIATIONS"
+                },
+                "values": [false, false, false, false, false, false, false, false, true, true]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 50,
+            "min": 20
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/CR199.def",
+            "map": "celestial/map/guard.def",
+            "iconSmall": "celestial/iconsSmall/CPrS199F.bmp",
+            "iconLarge": "celestial/iconsBig/CPrL199B.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/S202ATTK.wav",
+            "defend": "celestial/S202DFND.wav",
+            "killed": "celestial/S202KILL.wav",
+            "move": "celestial/S202MOVE.wav",
+            "wince": "celestial/S202WNCE.wav"
+        }
+    }
+}

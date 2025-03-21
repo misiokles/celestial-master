@@ -1,0 +1,118 @@
+{
+    "anAcidTrooper": {
+        "name": {
+            "singular": "酸液射手",
+            "plural": "酸液射手"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 2,
+        "aiValue": 250,
+        "fightValue": 256,
+        "growth": 9,
+        "horde": 5,
+
+        "attack": 7,
+        "defense": 7,
+        "damage": {
+            "max": 4,
+            "min": 4
+        },
+        "hitPoints": 20,
+        "speed": 9,
+        "doubleWide": false,
+        "hasDoubleWeek": true,
+        "cost": {
+            "gold": 150
+        },
+
+        "abilities": {
+            "noRetaliation": {
+                "type": "BLOCKS_RETALIATION"
+            },
+            "poison": {
+                "type": "SPELL_AFTER_ATTACK",
+                "subtype": "spell.poison",
+                "val": 100
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 25,
+            "min": 16
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/CR198.def",
+            "map": "celestial/map/CR198s.def",
+            "iconSmall": "celestial/iconsSmall/CPrS198F.bmp",
+            "iconLarge": "celestial/iconsBig/CPrL198B.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/FRDWATTK.wav",
+            "defend": "celestial/FRDWDFND.wav",
+            "killed": "celestial/FRDWKILL.wav",
+            "move": "celestial/FRDWMOVE.wav",
+            "wince": "celestial/FRDWWNCE.wav"
+        }
+    }
+}

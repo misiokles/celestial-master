@@ -1,0 +1,112 @@
+{
+    "celestial": {
+        "town": {
+            "siege": {
+                "shooter": "anDalek",
+                "imagePrefix": "celestial/siege/sgfg",
+				"towerIconSmall" : "celestial/icons/towerSmall",
+				"towerIconLarge" : "celestial/icons/towerLarge",
+                "towers": {
+                    "top": {
+                        "tower": {
+                            "x": 558,
+                            "y": 30
+                        },
+                        "battlement": {
+                            "x": 558,
+                            "y": 30
+                        },
+                        "creature": {
+                            "x": 340,
+                            "y": -173
+                        }
+                    },
+                    "keep": {
+                        "tower": {
+                            "x": 717,
+                            "y": 196
+                        },
+                        "battlement": {
+                            "x": 717,
+                            "y": 196
+                        },
+                        "creature": {
+                            "x": 519,
+                            "y": -5
+                        }
+                    },
+                    "bottom": {
+                        "tower": {
+                            "x": 579,
+                            "y": 513
+                        },
+                        "battlement": {
+                            "x": 579,
+                            "y": 513
+                        },
+                        "creature": {
+                            "x": 356,
+                            "y": 311
+                        }
+                    }
+                },
+
+                "gate": {
+                    "gate": {
+                        "x": 408,
+                        "y": 254
+                    },
+                    "arch": {
+                        "x": 476,
+                        "y": 192
+                    }
+                },
+
+                "walls": {
+                    "upper": {
+                        "x": 523,
+                        "y": 67
+                    },
+                    "upperMid": {
+                        "x": 486,
+                        "y": 158
+                    },
+                    "bottomMid": {
+                        "x": 489,
+                        "y": 322
+                    },
+                    "bottom": {
+                        "x": 506,
+                        "y": 373
+                    }
+                },
+
+                "moat": {
+                    "bank": {
+                        "x": 400,
+                        "y": 80
+                    },
+                    "moat": {
+                        "x": 406,
+                        "y": 90
+                    }
+                },
+
+                "static": {
+                    "top": {
+                        "x": 498,
+                        "y": 92
+                    },
+                    "bottom": {
+                        "x": 506,
+                        "y": 373
+                    },
+                    "background": {
+                        "x": 619,
+                        "y": 56
+                    }
+                }
+            }
+        }
+    }
+}

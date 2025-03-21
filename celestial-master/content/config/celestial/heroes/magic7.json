@@ -1,0 +1,64 @@
+{
+    "haMagic7": {
+        "class": "vdhCyborg",
+        "female": true,
+        "spellbook": ["inferno"],
+
+        "texts": {
+            "name": "费苏蕾塔",
+            "biography": "岛屿国王在一次火灾中救了她之后，她发现自己可以控制火焰的力量，就像利娜·因巴斯的屠戮成性一样。因此，她成为发条岛屿最强大的巫师之一。",
+            "specialty": {
+            	"name": "地狱烈焰",
+                "description": "使用地狱烈焰魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+                "tooltip": "魔法增强：地狱烈焰"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/fesurrecta/specSmall",
+            "specialtyLarge": "celestial/heroes/fesurrecta/specLarge",
+            "large": "celestial/heroes/fesurrecta/portraitLarge",
+            "small": "celestial/heroes/fesurrecta/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            },
+            {
+                "level": "basic",
+                "skill": "fireMagic"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "inferno": {
+                	"type": "SPECIAL_SPELL_LEV",
+                    "subtype": "spell.inferno",
+                    "updater": "TIMES_HERO_LEVEL",
+                    "val": 3
+                }
+            }
+        }
+    }
+}

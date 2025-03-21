@@ -1,0 +1,56 @@
+{
+    "haMight1": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "多赫尔",
+            "biography": "他是发条岛屿的中将-步兵部队元帅，一名出色的战略人才。",
+            "specialty": {
+            	"name": "卫兵",
+                "description": "达到1级以后提高卫兵或精英卫兵的攻击力与防御力。",
+                "tooltip": "生物强化：卫兵"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/dohel/specSmall",
+            "specialtyLarge": "celestial/heroes/dohel/specLarge",
+            "large": "celestial/heroes/dohel/portraitLarge",
+            "small": "celestial/heroes/dohel/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "offence"
+            },
+            {
+                "level": "basic",
+                "skill": "leadership"
+            }
+        ],
+
+        "specialty": {
+            "creature": "anGuardsman"
+        }
+    }
+}

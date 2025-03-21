@@ -1,0 +1,139 @@
+{
+    "anIshmael": {
+        "name": {
+            "singular": "神裔魔像",
+            "plural": "神裔魔像"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 7,
+        "upgrades": ["anLordIshmael"],
+        "aiValue": 4122,
+        "fightValue": 3320,
+        "growth": 1,
+
+        "attack": 20,
+        "defense": 20,
+        "damage": {
+            "max": 45,
+            "min": 45
+        },
+        "hitPoints": 180,
+        "speed": 10,
+        "doubleWide": true,
+        "hasDoubleWeek": false,
+        "cost": {
+            "gold": 2500,
+            "crystal": 1
+        },
+
+        "abilities": {
+            "robot": {
+                "type": "NON_LIVING"
+            },
+            "fire": {
+				"subtype" : "fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
+            },
+            "acid": {
+                "type": "ACID_BREATH",
+                "val": 50
+            },
+            "ignore": {
+                "type": "ENEMY_DEFENCE_REDUCTION",
+                "val": 10
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            },
+            {
+                "bonus": {
+                    "type": "ENEMY_DEFENCE_REDUCTION"
+                },
+                "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            },
+            {
+                "bonus": {
+					"type" : "KING",
+					"val" : 0
+                },
+                "values": [false, false, false, false, true, true, true, true, true, true]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 10,
+            "min": 4
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/CR209.DEF",
+            "map": "celestial/map/7aa.def",
+            "iconSmall": "celestial/iconsSmall/CPrS209F.bmp",
+            "iconLarge": "celestial/iconsBig/CPrL209B.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/S209ATTK.wav",
+            "defend": "celestial/S209DFND.wav",
+            "killed": "celestial/S209KILL.wav",
+            "move": "celestial/S209MOVE.wav",
+            "wince": "celestial/S209WNCE.wav"
+        }
+    }
+}

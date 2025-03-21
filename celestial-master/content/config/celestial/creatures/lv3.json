@@ -1,0 +1,118 @@
+{
+    "anMedic": {
+        "name": {
+            "singular": "治疗魔像",
+            "plural": "治疗魔像"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 3,
+        "upgrades": ["anHealer"],
+        "aiValue": 327,
+        "fightValue": 321,
+        "growth": 7,
+        "horde": 4,
+
+        "attack": 8,
+        "defense": 8,
+        "damage": {
+            "max": 4,
+            "min": 4
+        },
+        "hitPoints": 25,
+        "speed": 8,
+        "doubleWide": false,
+        "hasDoubleWeek": false,
+        "cost": {
+            "gold": 200
+        },
+
+        "abilities": {
+            "robot": {
+                "type": "NON_LIVING"
+            },
+            "healer": {
+                "type": "HEALER",
+				"subtype" : "spell.cure"
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 25,
+            "min": 12
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/pyro.def",
+            "map": "celestial/map/pyro.def",
+            "iconSmall": "celestial/iconsSmall/pyro.bmp",
+            "iconLarge": "celestial/iconsBig/pyro.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 0.6,
+                "walk": 1,
+                "idle": 4
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/S200ATTK.wav",
+            "defend": "celestial/S200DFND.wav",
+            "killed": "celestial/S200KILL.wav",
+            "move": "celestial/S200MOVE.wav",
+            "wince": "celestial/S200WNCE.wav"
+        }
+    }
+}

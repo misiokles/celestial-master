@@ -1,0 +1,539 @@
+{
+    "celestial": {
+        "town": {
+            "buildings": {
+                "mageGuild1": {
+                    "id": 0,
+                    "name": "1级魔法行会",
+                    "description": "进入魔法行会的来访英雄可以学会其中的魔法。",
+                    "cost": {
+                        "gold": 2000,
+                        "wood": 5,
+                        "ore": 5
+                    }
+                },
+
+                "mageGuild2": {
+                    "id": 1,
+                    "name": "2级魔法行会",
+                    "description": "进入魔法行会的来访英雄可以学会其中的魔法。",
+                    "upgrades": "mageGuild1",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5,
+                        "ore": 5,
+                        "mercury": 4,
+                        "sulfur": 4,
+                        "crystal": 4,
+                        "gems": 4
+                    }
+                },
+
+                "mageGuild3": {
+                    "id": 2,
+                    "name": "3级魔法行会",
+                    "description": "进入魔法行会的来访英雄可以学会其中的魔法。",
+                    "upgrades": "mageGuild2",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5,
+                        "ore": 5,
+                        "mercury": 6,
+                        "sulfur": 6,
+                        "crystal": 6,
+                        "gems": 6
+                    }
+                },
+
+                "mageGuild4": {
+                    "id": 3,
+                    "name": "4级魔法行会",
+                    "description": "进入魔法行会的来访英雄可以学会其中的魔法。",
+                    "upgrades": "mageGuild3",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5,
+                        "ore": 5,
+                        "mercury": 8,
+                        "sulfur": 8,
+                        "crystal": 8,
+                        "gems": 8
+                    }
+                },
+
+                "mageGuild5": {
+                    "id": 4,
+                    "name": "5级魔法行会",
+                    "description": "进入魔法行会的来访英雄可以学会其中的魔法。",
+                    "upgrades": "mageGuild4",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5,
+                        "ore": 5,
+                        "mercury": 10,
+                        "sulfur": 10,
+                        "crystal": 10,
+                        "gems": 10
+                    }
+                },
+
+                "tavern": {
+                    "id": 5,
+                    "name": "酒馆",
+                    "description": "酒馆可提高驻军的士气。",
+                    "cost": {
+                        "gold": 500,
+                        "wood": 5
+                    }
+                },
+
+                "shipyard": {
+                    "id": 6,
+                    "name": "船坞",
+                    "description": "船坞允许你购买船只。",
+                    "cost": {
+                        "gold": 2000,
+                        "wood": 20
+                    }
+                },
+
+                "fort": {
+                    "id": 7,
+                    "name": "堡垒",
+                    "description": "堡垒可为你的城镇提供城墙。",
+                    "cost": {
+                        "gold": 5000,
+                        "wood": 20,
+                        "ore": 20
+                    }
+                },
+
+                "citadel": {
+                    "id": 8,
+                    "name": "大本营",
+                    "description": "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+                    "upgrades": "fort",
+                    "cost": {
+                        "gold": 2500,
+                        "ore": 5
+                    }
+                },
+
+                "castle": {
+                    "id": 9,
+                    "name": "城堡",
+                    "description": "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+                    "upgrades": "citadel",
+                    "cost": {
+                        "gold": 5000,
+                        "wood": 10,
+                        "ore": 10
+                    }
+                },
+
+                "villageHall": {
+                    "id": 10,
+                    "name": "议事堂",
+                    "description": "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+                    "mode": "auto",
+                    "produce": {
+                        "gold": 500
+                    }
+                },
+
+                "townHall": {
+                    "id": 11,
+                    "name": "内政厅",
+                    "description": "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+                    "upgrades": "villageHall",
+                    "requires": ["tavern"],
+                    "cost": {
+                        "gold": 2500
+                    },
+                    "produce": {
+                        "gold": 1000
+                    }
+                },
+
+                "cityHall": {
+                    "id": 12,
+                    "name": "议会",
+                    "description": "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+                    "upgrades": "townHall",
+                    "cost": {
+                        "gold": 5000
+                    },
+                    "requires": [
+                        "allOf",
+                        ["mageGuild1"],
+                        ["blacksmith"],
+                        ["marketplace"]
+                    ],
+                    "produce": {
+                        "gold": 2000
+                    }
+                },
+
+                "capitol": {
+                    "id": 13,
+                    "name": "国会",
+                    "description": "国会每天向你提供4000个金币。",
+                    "upgrades": "cityHall",
+                    "requires": ["castle"],
+                    "cost": {
+                        "gold": 10000
+                    },
+                    "produce": {
+                        "gold": 4000
+                    }
+                },
+
+                "marketplace": {
+                    "id": 14,
+                    "name": "市场",
+                    "description": "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+                    "cost": {
+                        "gold": 500,
+                        "wood": 5
+                    }
+                },
+
+                "resourceSilo": {
+                    "id": 15,
+                    "name": "物资仓库",
+                    "description": "物资仓库每天为你额外提供1水晶。",
+                    "requires": ["marketplace"],
+                    "cost": {
+                        "gold": 5000,
+                        "ore": 5
+                    },
+                    "produce": {
+                        "crystal": 1
+                    }
+                },
+
+                "blacksmith": {
+                    "id": 16,
+                    "name": "铁匠铺",
+                    "description": "铁匠铺可向你的军队提供弩车。",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5
+                    },
+		            "warMachine": "ballista"
+                },
+
+                "special1": {
+                    "id": 17,
+                    "name": "灯塔",
+                    "description": "灯塔能提高船的移动能力。",
+					"bonuses": [
+						{
+							"propagator": "PLAYER_PROPAGATOR",
+							"type": "MOVEMENT",
+							"subtype": "heroMovementSea",
+							"val": 500
+						}
+					],
+                    "requires": ["shipyard"],
+                    "cost": {
+                        "gold": 2000,
+                        "ore": 10
+                    }
+                },
+
+                "horde1": {
+                    "id": 18,
+                    "name": "营房",
+                    "description": "营房使卫兵和精英卫兵的周产量+7。",
+                    "upgrades": "dwellingLvl1",
+                    "cost": {
+                        "gold": 1000
+                    }
+                },
+
+                "horde1Upgr": {
+                    "id": 19,
+                    "name": "营房",
+                    "description": "营房使卫兵和精英卫兵的周产量+7。",
+                    "upgrades": "dwellingUpLvl1",
+                    "requires": ["horde1"],
+                    "mode": "auto"
+                },
+
+                "ship": {
+                    "id": 20,
+                    "name": "船坞",
+                    "description": "船坞允许你购买船只。",
+                    "upgrades": "shipyard"
+                },
+
+                "special2": {
+                    "id": 21,
+                    "name": "避难所",
+                    "description": "避难所在每周的第1天使金币数量+10%。",
+                    "requires": ["fort"],
+                    "type": "treasury",
+                    "cost": {
+                        "gold": 5000,
+                        "wood": 5,
+                        "ore": 10
+                    }
+                },
+
+                "special3": {
+                    "id": 22,
+                    "name": "高级避难所",
+                    "description": "高级避难所每天为你额外提供2000个金币。",
+                    "cost": {
+                        "gold": 10000
+                    },
+                    "produce": {
+                        "gold": 2000
+                    }
+                },
+
+                "horde2": {
+                    "id": 24,
+                    "name": "科技前哨站",
+                    "description": "科技前哨站使火焰射手和酸液射手的周产量+5。",
+                    "upgrades": "dwellingLvl2",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5,
+                        "ore": 5
+                    }
+                },
+
+                "horde2Upgr": {
+                    "id": 25,
+                    "name": "科技前哨站",
+                    "description": "科技前哨站使火焰射手和酸液射手的周产量+5。",
+                    "upgrades": "dwellingUpLvl2",
+                    "requires": ["horde2"],
+                    "mode": "auto"
+                },
+
+                "grail": {
+                    "id": 26,
+                    "name": "科学中心",
+                    "description": "科学中心使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，并且在攻城战中使驻守英雄的攻击力和防御力各+10。",
+                    "mode": "grail",
+					"produce": { "gold": 5000 },
+                    "bonuses": [
+                        {
+                            "type": "PRIMARY_SKILL",
+                            "subtype": "primarySkill.attack",
+                            "val": 10
+                        },
+                        {
+                            "type": "PRIMARY_SKILL",
+                            "subtype": "primarySkill.defence",
+                            "val": 10
+                        }
+                    ]
+                },
+
+                "dwellingLvl1": {
+                    "id": 30,
+                    "name": "粮库",
+                    "description": "粮库允许你招募卫兵。",
+                    "requires": ["fort"],
+                    "cost": {
+                        "gold": 500,
+                        "wood": 5,
+                        "ore": 5
+                    }
+                },
+
+                "dwellingLvl2": {
+                    "id": 31,
+                    "name": "军事实验室",
+                    "description": "军事实验室允许你招募火焰射手。",
+                    "requires": ["fort"],
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5,
+                        "ore": 5
+                    }
+                },
+
+                "dwellingLvl3": {
+                    "id": 32,
+                    "name": "制造厂",
+                    "description": "制造厂允许你招募治疗魔像。",
+                    "requires": [
+                        "allOf",
+                        ["dwellingLvl1"],
+                        ["blacksmith"]
+                    ],
+                    "cost": {
+                        "gold": 1500,
+                        "wood": 5,
+                        "ore": 5,
+                        "crystal": 2
+                    }
+                },
+
+                "dwellingLvl4": {
+                    "id": 33,
+                    "name": "充能站",
+                    "description": "充能站允许你招募戴立克。",
+                    "requires": [
+                        "anyOf",
+                        ["dwellingLvl3"],
+                        [
+                            "allOf",
+                            ["dwellingLvl1"],
+                            ["dwellingLvl2"],
+                            ["blacksmith"]
+                        ]
+                    ],
+                    "cost": {
+                        "gold": 2000,
+                        "wood": 5,
+                        "ore": 5
+                    }
+                },
+
+                "dwellingLvl5": {
+                    "id": 34,
+                    "name": "仓库",
+                    "description": "仓库允许你招募天空护卫。",
+                    "requires": [
+                        "allOf",
+                        ["dwellingLvl1"],
+                        ["dwellingLvl2"],
+                        ["blacksmith"]
+                    ],
+                    "cost": {
+                        "gold": 3000,
+                        "wood": 5,
+                        "ore": 5,
+                        "gems": 5
+                    }
+                },
+
+                "dwellingLvl6": {
+                    "id": 35,
+                    "name": "兵工厂",
+                    "description": "兵工厂允许你招募火炮魔像。",
+                    "requires": [
+                        "allOf",
+                        ["dwellingLvl3"],
+                        ["dwellingLvl5"]
+                    ],
+                    "cost": {
+                        "gold": 3500,
+                        "wood": 5,
+                        "ore": 5,
+                        "crystal": 5
+                    }
+                },
+
+                "dwellingLvl7": {
+                    "id": 36,
+                    "name": "研发中心",
+                    "description": "研发中心允许你招募神裔魔像。",
+                    "requires": [
+                        "allOf",
+                        ["dwellingLvl6"],
+                        ["mageGuild1"]
+                    ],
+                    "cost": {
+                        "gold": 10000,
+                        "mercury": 10,
+                        "sulfur": 10,
+                        "crystal": 10,
+                        "gems": 10
+                    }
+                },
+
+                "dwellingUpLvl1": {
+                    "id": 37,
+                    "name": "高级粮库",
+                    "description": "高级粮库允许你招募精英卫兵。",
+                    "upgrades": "dwellingLvl1",
+                    "cost": {
+                        "gold": 1000
+                    }
+                },
+
+                "dwellingUpLvl2": {
+                    "id": 38,
+                    "name": "高级军事实验室",
+                    "description": "高级军事实验室允许你招募酸液射手。",
+                    "upgrades": "dwellingLvl2",
+                    "cost": {
+                        "gold": 1000,
+                        "wood": 5
+                    }
+                },
+
+                "dwellingUpLvl3": {
+                    "id": 39,
+                    "name": "高级制造厂",
+                    "description": "高级制造厂允许你招募修复魔像。",
+                    "upgrades": "dwellingLvl3",
+                    "cost": {
+                        "gold": 1500,
+                        "crystal": 5
+                    }
+                },
+
+                "dwellingUpLvl4": {
+                    "id": 40,
+                    "name": "高级充能站",
+                    "description": "高级充能站允许你招募冲锋戴立克。",
+                    "upgrades": "dwellingLvl4",
+                    "cost": {
+                        "gold": 2000,
+                        "ore": 5
+                    }
+                },
+
+                "dwellingUpLvl5": {
+                    "id": 41,
+                    "name": "高级仓库",
+                    "description": "高级仓库允许你招募天空骑士。",
+                    "upgrades": "dwellingLvl5",
+                    "cost": {
+                        "gold": 3000,
+                        "wood": 5,
+                        "ore": 5,
+                        "gems": 2
+                    }
+                },
+
+                "dwellingUpLvl6": {
+                    "id": 42,
+                    "name": "高级兵工厂",
+                    "description": "高级兵工厂允许你招募攻城魔像。",
+                    "upgrades": "dwellingLvl6",
+                    "cost": {
+                        "gold": 3000,
+                        "wood": 5,
+                        "ore": 5,
+                        "mercury": 5,
+                        "sulfur": 5,
+                        "crystal": 5,
+                        "gems": 5
+                    }
+                },
+
+                "dwellingUpLvl7": {
+                    "id": 43,
+                    "name": "高级研发中心",
+                    "description": "高级研发中心允许你招募圣主魔像。",
+                    "upgrades": "dwellingLvl7",
+                    "cost": {
+                        "gold": 20000,
+                        "wood": 10,
+                        "ore": 10,
+                        "crystal": 20
+                    }
+                }
+            }
+        }
+    }
+}

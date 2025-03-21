@@ -1,0 +1,56 @@
+{
+    "haMight6": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "图利安",
+            "biography": "每个人都知道他是“攻城之王”。关于他的信息很少。",
+            "specialty": {
+                "name": "火炮魔像",
+                "description": "达到6级以后提高火炮魔像或攻城魔像的攻击力与防御力。",
+                "tooltip": "生物强化：火炮魔像"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/tulian/specSmall",
+            "specialtyLarge": "celestial/heroes/tulian/specLarge",
+            "large": "celestial/heroes/tulian/portraitLarge",
+            "small": "celestial/heroes/tulian/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anCannonGolem",
+                "min": 1,
+                "max": 2
+            },
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anCannonGolem",
+                "min": 1,
+                "max": 2
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            },
+            {
+                "level": "basic",
+                "skill": "learning"
+            }
+        ],
+
+        "specialty": {
+            "creature": "anCannonGolem"
+        }
+    }
+}

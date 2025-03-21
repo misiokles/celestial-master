@@ -1,0 +1,66 @@
+{
+    "haMagic1": {
+        "class": "vdhCyborg",
+        "female": false,
+        "spellbook": ["magicArrow"],
+
+        "texts": {
+            "name": "西斯崔特",
+            "biography": "他是岛屿国王的得力助手，发条岛屿最强大的长者巫师之一。",
+            "specialty": {
+            	"name": "魔力",
+                "description": "在魔力技能上每级得到5%的额外奖励。",
+                "tooltip": "技能加成：魔力"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/shistrict/specSmall",
+            "specialtyLarge": "celestial/heroes/shistrict/specLarge",
+            "large": "celestial/heroes/shistrict/portraitLarge",
+            "small": "celestial/heroes/shistrict/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "sorcery"
+            },
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "sorcery": {
+					"subtype" : "any",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+                    "updater": "TIMES_HERO_LEVEL",
+                    "val": 5
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "anSkyKnight": {
+        "name": {
+            "singular": "天空骑士",
+            "plural": "天空骑士"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 5,
+        "aiValue": 1365,
+        "fightValue": 1208,
+        "growth": 3,
+        "horde": 2,
+
+        "attack": 13,
+        "defense": 13,
+        "damage": {
+            "max": 14,
+            "min": 14
+        },
+        "hitPoints": 70,
+        "speed": 13,
+        "doubleWide": false,
+        "hasDoubleWeek": false,
+        "cost": {
+            "gold": 600
+        },
+
+        "abilities": {
+            "robot": {
+                "type": "NON_LIVING"
+            },
+            "fly": {
+                "type": "FLYING",
+                "subtype": "movementFlying"
+            },
+            "breath": {
+                "type": "TWO_HEX_ATTACK_BREATH"
+            },
+            "slayer": {
+                "type": "SLAYER",
+                "val": 1
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            },
+            {
+                "bonus": {
+                    "type": "SLAYER"
+                },
+                "values": [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 12,
+            "min": 8
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/SkyKnight.def",
+            "map": "celestial/map/SkyKnight.def",
+            "iconSmall": "celestial/iconsSmall/SkyKnight",
+            "iconLarge": "celestial/iconsBig/SkyKnight",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/lv5/attack.wav",
+            "defend": "celestial/lv5/defendUpg.wav",
+            "killed": "celestial/lv5/killUpg.wav",
+            "move": "celestial/lv5/move.wav",
+            "startMoving": "celestial/lv5/movestart.wav",
+            "endMoving": "celestial/lv5/moveend.wav",
+            "wince": "celestial/lv5/winceUpg.wav"
+        }
+    }
+}

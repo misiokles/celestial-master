@@ -1,0 +1,154 @@
+{
+    "celestial": {
+        "name": "发条城",
+        "nativeTerrain": "swamp",
+        "alignment": "neutral",
+		"boat" : "boatNecropolis",
+        "creatureBackground": {
+            "120px": "celestial/creature-bg-120px",
+            "130px": "celestial/creature-bg-130px"
+        },
+
+        "town": {
+            "primaryResource": "crystal",
+            "mageGuild": 5,
+            "moatAbility":"celestialMoat",
+            "horde": [0, 1], // 0 - 1st horde building; 1 - 2nd horde building (-1 if not present)
+
+            "mapObject": {
+                "templates": {
+                    "capitol": {
+                        "animation": "celestial/adventure-map/town-capitol.def"
+                    },
+                    "castle": {
+                        "animation": "celestial/adventure-map/town-castle.def"
+                    },
+                    "citadel": {
+                        "animation": "celestial/adventure-map/town-citadel.def"
+                    },
+                    "fort": {
+                        "animation": "celestial/adventure-map/town-fort.def"
+                    },
+                    "village": {
+                        "animation": "celestial/adventure-map/town-village.def"
+                    }
+                }
+            },
+
+            "icons": {
+                "village": {
+                    "normal": {
+                        "small": "celestial/icons/hall-small.bmp",
+                        "large": "celestial/icons/hall-big.bmp"
+                    },
+                    "built": {
+                        "small": "celestial/icons/hall-builded-small.bmp",
+                        "large": "celestial/icons/hall-builded-big.bmp"
+                    }
+                },
+                "fort": {
+                    "normal": {
+                        "small": "celestial/icons/fort-small.bmp",
+                        "large": "celestial/icons/fort-big.bmp"
+                    },
+                    "built": {
+                        "small": "celestial/icons/fort-builded-small.bmp",
+                        "large": "celestial/icons/fort-builded-big.bmp"
+                    }
+                }
+            },
+
+            "musicTheme": ["music/celestial/theme"],
+            "townBackground": "celestial/town-screen/background",
+            "guildWindow": "celestial/town-screen/mage-guild",
+            "buildingsIcons": "celestial/town-hall.def",
+
+            "tavernVideo": "TAVERN.BIK",
+            "guildBackground": "TPMAGE.bmp",
+            "hallBackground": "TPTHBKFR.BMP",
+
+            "hallSlots": [
+                [
+                    ["villageHall", "townHall", "cityHall", "capitol"],
+                    ["fort", "citadel", "castle"],
+                    ["tavern"],
+                    ["blacksmith"]
+                ],
+                [
+                    ["marketplace", "resourceSilo"],
+                    ["mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5"],
+                    ["shipyard", "special1"]
+                ],
+                [
+                    ["special2", "special3"],
+                    ["horde1", "horde1Upgr"],
+                    ["horde2", "horde2Upgr"]
+                ],
+                [
+                    ["dwellingLvl1", "dwellingUpLvl1"],
+                    ["dwellingLvl2", "dwellingUpLvl2"],
+                    ["dwellingLvl3", "dwellingUpLvl3"],
+                    ["dwellingLvl4", "dwellingUpLvl4"]
+                ],
+                [
+                    ["dwellingLvl5", "dwellingUpLvl5"],
+                    ["dwellingLvl6", "dwellingUpLvl6"],
+                    ["dwellingLvl7", "dwellingUpLvl7"]
+                ]
+            ],
+
+            "creatures": [
+                ["anGuardsman", "anVeteranGuardsman"],
+                ["anFlametrooper", "anAcidTrooper"],
+                ["anMedic", "anHealer"],
+                ["anDalek", "anWarDalek"],
+                ["anSkyGuard", "anSkyKnight"],
+                ["anCannonGolem", "anSiegeGolem"],
+                ["anIshmael", "anLordIshmael"]
+            ],
+
+            "names": [
+                "赛博城",
+                "加林城",
+                "斐瑞城",
+                "避风城",
+                "巴西城",
+                "晚春城",
+                "石沼城",
+                "伟伦城",
+                "新绿城",
+                "新风城",
+                "温蒂城",
+                "赛琳城",
+                "哈利城",
+                "莱尔城",
+                "莫哈科",
+                "铁血城"
+            ],
+
+            "defaultTavern": 5,
+            "tavern": {
+                "knight": 3,
+                "cleric": 3,
+                "ranger": 3,
+                "druid": 3,
+                "alchemist": 3,
+                "wizard": 3,
+                "demoniac": 3,
+                "heretic": 3,
+                "deathknight": 3,
+                "necromancer": 3,
+                "warlock": 3,
+                "overlord": 3,
+                "barbarian": 3,
+                "battlemage": 3,
+                "beastmaster": 3,
+                "witch": 3,
+                "planeswalker": 3,
+                "elementalist": 3,
+                "vdhMarshal": 5,
+                "vdhCyborg": 5
+            }
+        }
+    }
+}

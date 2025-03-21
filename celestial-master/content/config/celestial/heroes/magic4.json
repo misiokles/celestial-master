@@ -1,0 +1,66 @@
+{
+    "haMagic4": {
+        "class": "vdhCyborg",
+        "female": true,
+        "spellbook": ["cure"],
+
+        "texts": {
+            "name": "玛伦",
+            "biography": "她是发条岛屿最富有、最乐善好施的商人。",
+            "specialty": {
+            	"name": "理财术",
+                "description": "在理财术上每级得到5%的额外奖励。",
+                "tooltip": "技能加成：理财术"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/maren/specSmall",
+            "specialtyLarge": "celestial/heroes/maren/specLarge",
+            "large": "celestial/heroes/maren/portraitLarge",
+            "small": "celestial/heroes/maren/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "estates"
+            },
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "estates": {
+					"subtype" : "gold",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "GENERATE_RESOURCE",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+                    "updater": "TIMES_HERO_LEVEL",
+                    "val": 5
+                }
+            }
+        }
+    }
+}

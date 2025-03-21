@@ -1,0 +1,93 @@
+{
+    "core:creatureGeneratorCommon": {
+        "types": {
+            "ftCommissariat": {
+                "name": "粮库",
+                "creatures": [
+                    ["anGuardsman"]
+                ],
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-1.def",
+                        "mask": ["VVV", "VVV", "VAB"]
+                    }
+                }
+            },
+            "ftMilitarylaboratory": {
+                "name": "军事实验室",
+                "creatures": [
+                    ["anFlametrooper"]
+                ],
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-2.def",
+                        "mask": ["VVV", "VVV", "VBA"]
+                    }
+                }
+            },
+            "ftManufactory": {
+                "name": "制造厂",
+                "creatures": [
+                    ["anMedic"]
+                ],
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-3.def",
+                        "mask": ["VVV", "VVV", "VBA"]
+                    }
+                }
+            },
+            "ftRefueler": {
+                "name": "充能站",
+                "creatures": [
+                    ["anDalek"]
+                ],
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-4.def",
+                        "mask": ["VVV", "VBB", "BAV"]
+                    }
+                }
+            },
+            "ftDepot": {
+                "name": "仓库",
+                "creatures": [
+                    ["anSkyGuard"]
+                ],
+                "guards": true,
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-5.def",
+                        "mask": ["VVV", "VBB", "BBA"]
+                    }
+                }
+            },
+            "ftArsenal": {
+                "name": "兵工厂",
+                "creatures": [
+                    ["anCannonGolem"]
+                ],
+                "guards": true,
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-6.def",
+                        "mask": ["VVV", "VBV", "VAB"]
+                    }
+                }
+            },
+            "ftResearchCenter": {
+                "name": "研发中心",
+                "creatures": [
+                    ["anIshmael"]
+                ],
+                "guards": true,
+                "templates": {
+                    "default": {
+                        "animation": "celestial/adventure-map/dwelling-7.def",
+                        "mask": ["VVV", "BBV", "VBA"]
+                    }
+                }
+            }
+        }
+    }
+}

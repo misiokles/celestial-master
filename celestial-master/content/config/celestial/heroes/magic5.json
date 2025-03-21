@@ -1,0 +1,62 @@
+{
+    "haMagic5": {
+        "class": "vdhCyborg",
+        "female": true,
+        "spellbook": ["slayer"],
+
+        "texts": {
+            "name": "曼尼拉",
+            "biography": "有一次，她遵从国王的命令，只带了几个助手就杀死了一条黑龙。由于这一光荣的胜利，她被授予了“屠龙勇士”头衔。",
+            "specialty": {
+                "name": "屠戮成性",
+                "description": "使用屠戮成性魔法时效果大增，但还要取决于英雄级别与目标级别之差(目标的级别越低，效果越好)。",
+                "tooltip": "魔法增强：屠戮成性"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/munnira/specSmall",
+            "specialtyLarge": "celestial/heroes/munnira/specLarge",
+            "large": "celestial/heroes/munnira/portraitLarge",
+            "small": "celestial/heroes/munnira/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            },
+            {
+                "level": "basic",
+                "skill": "fireMagic"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "slayer": {
+                    "type": "SPECIAL_PECULIAR_ENCHANT",
+                    "subtype" : "spell.slayer"
+                }
+            }
+        }
+    }
+}

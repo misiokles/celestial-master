@@ -1,0 +1,137 @@
+{
+    "anCannonGolem": {
+        "name": {
+            "singular": "火炮魔像",
+            "plural": "火炮魔像"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 6,
+        "upgrades": ["anSiegeGolem"],
+        "aiValue": 1478,
+        "fightValue": 1318,
+        "growth": 2,
+
+        "attack": 15,
+        "defense": 15,
+        "damage": {
+            "max": 20,
+            "min": 20
+        },
+        "hitPoints": 65,
+        "speed": 6,
+        "shots": 24,
+        "doubleWide": true,
+        "hasDoubleWeek": false,
+        "cost": {
+            "gold": 850
+        },
+
+        "abilities": {
+            "robot": {
+                "type": "NON_LIVING"
+            },
+            "shoot": {
+                "type": "SHOOTER"
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            },
+            {
+                "bonus": {
+                    "type": "RANGED_RETALIATION"
+                },
+                "values": [false, false, false, false, true, true, true, true, true, true]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 12,
+            "min": 5
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/Fighter.def",
+            "map": "celestial/map/Fighter.def",
+            "iconSmall": "celestial/iconsSmall/Fighter.bmp",
+            "iconLarge": "celestial/iconsBig/Fighter.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            },
+
+            "missile": {
+                "projectile": "celestial/battle/projectile/mechShoot.def",
+                "attackClimaxFrame": 8,
+                "offset": {
+                    "upperX": 41,
+                    "upperY": -92,
+                    "middleX": 58,
+                    "middleY": -79,
+                    "lowerX": 29,
+                    "lowerY": -14
+                },
+                "frameAngles": [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/S205ATTK.wav",
+            "defend": "celestial/S205DFND.wav",
+            "killed": "celestial/S205KILL.wav",
+            "move": "celestial/S205MOVE.wav",
+            "wince": "celestial/S205WNCE.wav"
+        }
+    }
+}

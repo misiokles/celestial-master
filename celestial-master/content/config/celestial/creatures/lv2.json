@@ -1,0 +1,114 @@
+{
+    "anFlametrooper": {
+        "name": {
+            "singular": "火焰射手",
+            "plural": "火焰射手"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 2,
+        "upgrades": ["anAcidTrooper"],
+        "aiValue": 210,
+        "fightValue": 216,
+        "growth": 9,
+        "horde": 5,
+
+        "attack": 6,
+        "defense": 6,
+        "damage": {
+            "max": 3,
+            "min": 3
+        },
+        "hitPoints": 20,
+        "speed": 7,
+        "doubleWide": false,
+        "hasDoubleWeek": true,
+        "cost": {
+            "gold": 100
+        },
+
+        "abilities": {
+            "noRetaliation": {
+                "type": "BLOCKS_RETALIATION"
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 30,
+            "min": 16
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/CR197.def",
+            "map": "celestial/map/CR197s.def",
+            "iconSmall": "celestial/iconsSmall/CPrS197F.bmp",
+            "iconLarge": "celestial/iconsBig/CPrL197B.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/FRDWATTK.wav",
+            "defend": "celestial/FRDWDFND.wav",
+            "killed": "celestial/FRDWKILL.wav",
+            "move": "celestial/FRDWMOVE.wav",
+            "wince": "celestial/FRDWWNCE.wav"
+        }
+    }
+}

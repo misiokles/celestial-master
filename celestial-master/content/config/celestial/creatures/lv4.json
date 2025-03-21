@@ -1,0 +1,133 @@
+{
+    "anDalek": {
+        "name": {
+            "singular": "戴立克",
+            "plural": "戴立克"
+        },
+        "faction": "celestial",
+        "special": false,
+        "level": 4,
+        "upgrades": ["anWarDalek"],
+        "aiValue": 441,
+        "fightValue": 432,
+        "growth": 4,
+        "horde": 3,
+
+        "attack": 10,
+        "defense": 10,
+        "damage": {
+            "max": 7,
+            "min": 7
+        },
+        "hitPoints": 25,
+        "speed": 5,
+        "shots": 24,
+        "doubleWide": true,
+        "hasDoubleWeek": false,
+        "cost": {
+            "gold": 300
+        },
+
+        "abilities": {
+            "robot": {
+                "type": "NON_LIVING"
+            },
+            "shoot": {
+                "type": "SHOOTER"
+            }
+        },
+
+        "stackExperience": [
+            {
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+                "bonus": {
+                    "type": "STACKS_SPEED",
+                    "valueType": "BASE_NUMBER"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 2, 2, 2, 3]
+            }
+        ],
+
+        "advMapAmount": {
+            "max": 20,
+            "min": 10
+        },
+
+        "graphics": {
+            "animation": "celestial/battle/Mecha.def",
+            "map": "celestial/map/Mecha.def",
+            "iconSmall": "celestial/iconsSmall/dalek",
+            "iconLarge": "celestial/iconsBig/Mecha.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "attack": 1,
+                "walk": 1,
+                "idle": 10
+            },
+
+            "missile": {
+                "projectile": "celestial/battle/projectile/mechShoot.def",
+                "attackClimaxFrame": 8,
+                "offset": {
+                    "upperX": 41,
+                    "upperY": -92,
+                    "middleX": 58,
+                    "middleY": -79,
+                    "lowerX": 29,
+                    "lowerY": -14
+                },
+                "frameAngles": [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+            }
+        },
+
+        "sound": {
+            "attack": "celestial/DALKATTK.wav",
+            "defend": "celestial/DALKDFND.wav",
+            "killed": "celestial/DALKKILL.wav",
+            "move": "celestial/DALKMOVE.wav",
+            "shoot": "celestial/DALKSHOT.wav",
+            "wince": "celestial/DALKWNCE.wav"
+        }
+    }
+}

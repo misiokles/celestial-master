@@ -1,0 +1,56 @@
+{
+    "haMight5": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "翁吉斯特",
+            "biography": "他负责发条岛屿天空的安全工作，是空军的元帅，左翼将军。",
+            "specialty": {
+                "name": "天空护卫",
+                "description": "达到5级以后提高天空护卫或天空骑士的攻击力与防御力。",
+                "tooltip": "生物强化：天空护卫"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/wengist/specSmall",
+            "specialtyLarge": "celestial/heroes/wengist/specLarge",
+            "large": "celestial/heroes/wengist/portraitLarge",
+            "small": "celestial/heroes/wengist/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anSkyGuard",
+                "min": 1,
+                "max": 2
+            },
+            {
+                "creature": "anSkyGuard",
+                "min": 1,
+                "max": 2
+            },
+            {
+                "creature": "anSkyGuard",
+                "min": 1,
+                "max": 2
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "luck"
+            },
+            {
+                "level": "basic",
+                "skill": "tactics"
+            }
+        ],
+
+        "specialty": {
+            "creature": "anSkyGuard"
+        }
+    }
+}

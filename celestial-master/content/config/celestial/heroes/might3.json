@@ -1,0 +1,57 @@
+{
+    "haMight3": {
+        "class": "vdhMarshal",
+        "female": true,
+        "spellbook": ["summonBoat"],
+
+        "texts": {
+            "name": "塔穆斯",
+            "biography": "她是一名疗愈者，帝国卫队队长，还负责后勤事务，是国王的左手。",
+            "specialty": {
+            	"name": "治疗魔像",
+                "description": "达到3级以后提高治疗魔像或修复魔像的攻击力与防御力。",
+                "tooltip": "生物强化：治疗魔像"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/tamus/specSmall",
+            "specialtyLarge": "celestial/heroes/tamus/specLarge",
+            "large": "celestial/heroes/tamus/portraitLarge",
+            "small": "celestial/heroes/tamus/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "scholar"
+            },
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            }
+        ],
+
+        "specialty": {
+            "creature": "anMedic"
+        }
+    }
+}

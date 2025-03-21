@@ -1,0 +1,65 @@
+{
+    "haMight8": {
+        "class": "vdhMarshal",
+        "female": false,
+
+        "texts": {
+            "name": "萨托尔",
+            "biography": "他是发条岛屿天空侦察队的队长。他在困难的地形上航行的能力使他在工作中表现出色。",
+            "specialty": {
+            	"name": "后勤学",
+                "description": "在后勤学上每级得到5%的额外奖励。",
+                "tooltip": "技能加成：后勤学"
+            }
+        },
+
+        "images": {
+            "specialtySmall": "celestial/heroes/satore/specSmall",
+            "specialtyLarge": "celestial/heroes/satore/specLarge",
+            "large": "celestial/heroes/satore/portraitLarge",
+            "small": "celestial/heroes/satore/portraitSmall"
+        },
+
+        "army": [
+            {
+                "creature": "anGuardsman",
+                "min": 15,
+                "max": 18
+            },
+            {
+                "creature": "anFlametrooper",
+                "min": 5,
+                "max": 6
+            },
+            {
+                "creature": "anMedic",
+                "min": 3,
+                "max": 4
+            }
+        ],
+
+        "skills": [
+            {
+                "level": "basic",
+                "skill": "logistics"
+            },
+            {
+                "level": "basic",
+                "skill": "wisdom"
+            }
+        ],
+
+        "specialty": {
+            "bonuses": {
+                "logistics": {
+					"subtype" : "heroMovementLand",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MOVEMENT",
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+                    "updater": "TIMES_HERO_LEVEL",
+                    "val": 5
+                }
+            }
+        }
+    }
+}
